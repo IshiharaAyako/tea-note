@@ -7,11 +7,5 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-
-.text {
-    width: 100vw;
-    height: 100vh;
-    line-height: 100vh;
-    text-align: center;
-    color: red;
-}
+// scss
+@import "text.scss";
