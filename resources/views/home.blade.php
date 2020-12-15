@@ -16,6 +16,22 @@
 
                     You are logged in!
                 </div>
+
+                {!! Form::open(['route' => ['informations.store'], 'method' => 'post']) !!}
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="inputAddress">タイトル</label>
+                          {!! Form::text('title', '', ['class' => 'form-control', 'placeholder' => 'テキストを入力してください', 'required']) !!}
+                        </div>
+                        <div class="form-group">
+                          <label for="inputAddress2">内容</label>
+                          {!! Form::text('body', '', ['class' => 'form-control', 'placeholder' => 'テキストを入力してください', 'required']) !!}
+                        </div>
+                        <button type="submit" class="btn btn-primary">submit</button>
+                    </form>
+                </div>
+                {!! Form::close() !!}
             </div>
         </div>
     </div>

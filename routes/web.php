@@ -22,6 +22,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::resource('informations', 'InformationController');
+
 Route::get('/sass', function () {
     return view('sass');
 });
