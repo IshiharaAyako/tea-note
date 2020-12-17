@@ -11,7 +11,7 @@ class InformationController extends Controller
     {
         // $validated = $request->validated();
 
-        $information = Information::create([
+        Information::create([
             'title' => $request['title'],
             'body' => $request['body'],
         ]);
