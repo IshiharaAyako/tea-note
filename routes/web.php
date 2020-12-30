@@ -27,3 +27,9 @@ Route::resource('informations', 'InformationController');
 Route::get('/sass', function () {
     return view('sass');
 });
+
+/************************ LINE *************************/
+// line webhook受取用
+Route::post('/line/callback',    'LineApiController@postWebhook');
+// line メッセージ送信用
+Route::get('/line/message/send', 'LineApiController@sendMessage');
